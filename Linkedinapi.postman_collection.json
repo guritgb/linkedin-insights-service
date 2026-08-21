@@ -1,0 +1,157 @@
+{
+  "info": {
+    "_postman_id": "0266f4dc-149d-473c-9b04-57e1d34f096b",
+    "name": "Linkedinapi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57614761",
+    "_collection_link": "https://go.postman.co/collection/57614761-0266f4dc-149d-473c-9b04-57e1d34f096b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "page by id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/pages/deepsolv",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "pages",
+            "deepsolv"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "pages filter and pagination",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/pages?min_followers=1000&max_followers=100000&name=deep&industry=software development&page=1&limit=10",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "pages"
+          ],
+          "query": [
+            {
+              "key": "min_followers",
+              "value": "1000",
+              "type": "text"
+            },
+            {
+              "key": "max_followers",
+              "value": "100000",
+              "type": "text"
+            },
+            {
+              "key": "name",
+              "value": "deep",
+              "type": "text"
+            },
+            {
+              "key": "industry",
+              "value": "software development",
+              "type": "text"
+            },
+            {
+              "key": "page",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "limit",
+              "value": "10",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get page posts",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/pages/deepsolv/posts?page=1&limit=10",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "pages",
+            "deepsolv",
+            "posts"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "limit",
+              "value": "10",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get ai summary",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/pages/deepsolv/aisummary",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "pages",
+            "deepsolv",
+            "aisummary"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
